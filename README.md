@@ -33,6 +33,20 @@
 6. Відкрити сайт:
    - `http://127.0.0.1:8000/`
 
+## Налаштування для публічного репозиторію
+
+Проєкт читає базові параметри Django з змінних середовища:
+
+- `DJANGO_SECRET_KEY` - секретний ключ (обов'язково змінити для продакшну);
+- `DJANGO_DEBUG` - режим налагодження (`True` або `False`);
+- `DJANGO_ALLOWED_HOSTS` - список хостів через кому (наприклад: `127.0.0.1,localhost,example.com`).
+
+Приклад для PowerShell:
+
+- `$env:DJANGO_SECRET_KEY="your-strong-secret-key"`
+- `$env:DJANGO_DEBUG="False"`
+- `$env:DJANGO_ALLOWED_HOSTS="example.com,www.example.com"`
+
 ## Тестування
 
 Запуск автоматизованих тестів:
