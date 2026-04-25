@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Категорії | Тлумачний словник{% endblock %}
+
+{% block content %}
+<h2>Категорії термінів</h2>
+<ul class="card-list">
+    {% for category in categories %}
+    <li class="card">
+        <h3><a href="{{ category.get_absolute_url }}">{{ category.name }}</a></h3>
+        <p>{{ category.description|default:"Опис категорії відсутній." }}</p>
+        <small>Термінів: {{ category.terms.count }}</small>
+    </li>
+    {% empty %}
+    <li>Категорії ще не створено.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

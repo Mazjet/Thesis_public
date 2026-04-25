@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Запропонувати термін{% endblock %}
+
+{% block content %}
+<h2>Форма пропозиції нового терміна</h2>
+<p>Якщо потрібного терміна немає у словнику, ви можете запропонувати його додати.</p>
+
+<form method="post" class="suggestion-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Надіслати</button>
+</form>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Головна | Тлумачний словник{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h2>Ласкаво просимо до словника інформаційно-комп'ютерних термінів</h2>
+    <p>Ресурс допомагає швидко знаходити чіткі визначення ключових понять у сфері ІТ та підтримує єдину термінологію для навчальних дисциплін.</p>
+    <form method="get" action="{% url 'term_list' %}" class="search-form hero-search">
+        <label for="home-search">Швидкий пошук</label>
+        <div class="search-row">
+            <input id="home-search" type="text" name="q" placeholder="Введіть термін або ключове слово">
+            <button type="submit">Знайти</button>
+        </div>
+    </form>
+    <div class="stats">
+        <div><strong>{{ term_count }}</strong><span>термінів</span></div>
+        <div><strong>{{ category_count }}</strong><span>категорій</span></div>
+    </div>
+</section>
+
+<section>
+    <h3>Популярні категорії</h3>
+    <ul class="card-list categories-list">
+        {% for category in popular_categories %}
+        <li class="card compact">
+            <h4><a href="{{ category.get_absolute_url }}">{{ category.name }}</a></h4>
+            <p>{{ category.description|default:"Категорія термінів для навчального використання." }}</p>
+            <small>{{ category.term_total }} термін(ів)</small>
+        </li>
+        {% empty %}
+        <li>Категорії ще не додані.</li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section>
+    <h3>Останні додані терміни</h3>
+    <ul class="card-list">
+        {% for item in latest_terms %}
+        <li class="card">
+            <h4><a href="{{ item.get_absolute_url }}">{{ item.term }}</a></h4>
+            <p>{{ item.short_definition }}</p>
+            <small>Категорія: {{ item.category.name }}</small>
+        </li>
+        {% empty %}
+        <li>Терміни ще не додані.</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}

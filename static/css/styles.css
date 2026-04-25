@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.45;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.site-header {
+    background: #1e3a66;
+    color: #fff;
+    padding: 14px 0;
+    box-shadow: 0 2px 12px rgba(11, 29, 61, 0.2);
+}
+
+.site-header a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.site-header h1 {
+    margin: 0 0 8px 0;
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 24px 0;
+    flex: 1;
+}
+
+.site-footer {
+    background: #e5eaf7;
+    padding: 12px 0;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+.hero {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.hero h2 {
+    margin-top: 0;
+}
+
+.hero-search {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stats div {
+    background: #e8f0ff;
+    border-radius: 10px;
+    padding: 10px 14px;
+    min-width: 140px;
+}
+
+.stats strong {
+    display: block;
+    font-size: 1.4rem;
+}
+
+.card-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+}
+
+.card {
+    background: #fff;
+    padding: 14px 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e7ebf3;
+}
+
+.card h3,
+.card h4 {
+    margin-top: 0;
+}
+
+.card.compact p {
+    margin-bottom: 8px;
+}
+
+.catalog-note {
+    margin-top: 0;
+    color: #4b5563;
+}
+
+.about-page {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.07);
+    padding: 20px 22px;
+    max-width: 860px;
+}
+
+.about-page h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.about-page h3 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #1e3a66;
+}
+
+.about-page p {
+    margin: 10px 0;
+    max-width: 78ch;
+}
+
+.about-page ul {
+    margin: 8px 0 0 0;
+    padding-left: 20px;
+}
+
+.about-page li {
+    margin: 4px 0;
+}
+
+.term-detail {
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.07);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #1e3a66;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.term-detail h2 {
+    margin-top: 0;
+}
+
+.term-block {
+    background: #f8fafc;
+    border: 1px solid #e6edf6;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+}
+
+.term-block h3 {
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+    color: #1f355e;
+}
+
+.term-short .lead {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #1f2937;
+}
+
+.term-full p {
+    margin: 0;
+}
+
+.term-meta {
+    display: grid;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.term-meta p {
+    margin: 0;
+    background: #eef2ff;
+    border: 1px solid #dbe3ff;
+    border-radius: 8px;
+    padding: 8px 10px;
+}
+
+.term-meta span {
+    display: inline-block;
+    min-width: 88px;
+    font-weight: 700;
+    color: #1e3a66;
+}
+
+.search-form,
+.suggestion-form {
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #e5e7eb;
+}
+
+.search-row {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 12px;
+    align-items: end;
+}
+
+.search-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #c7d2fe;
+    text-decoration: none;
+    color: #1e3a66;
+    background: #eef2ff;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #2958b8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1f468f;
+}
+
+@media (max-width: 780px) {
+    .search-row {
+        grid-template-columns: 1fr;
+    }
+
+    .term-meta span {
+        min-width: 72px;
+    }
+}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}{{ category.name }} | Категорія{% endblock %}
+
+{% block content %}
+<h2>{{ category.name }}</h2>
+<p>{{ category.description }}</p>
+
+<h3>Терміни категорії</h3>
+<ul class="card-list">
+    {% for term in terms %}
+    <li class="card">
+        <h4><a href="{{ term.get_absolute_url }}">{{ term.term }}</a></h4>
+        <p>{{ term.short_definition }}</p>
+    </li>
+    {% empty %}
+    <li>У цій категорії поки немає термінів.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

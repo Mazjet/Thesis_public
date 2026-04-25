@@ -1,0 +1,585 @@
+[
+  {
+    "model": "dictionary.category",
+    "pk": 1,
+    "fields": {
+      "name": "Основи програмування",
+      "slug": "osnovy-programuvannia",
+      "description": "Базові поняття алгоритмізації, структур даних і коду."
+    }
+  },
+  {
+    "model": "dictionary.category",
+    "pk": 2,
+    "fields": {
+      "name": "Вебтехнології",
+      "slug": "vebtekhnolohii",
+      "description": "Терміни, пов'язані з браузером, протоколами та розробкою сайтів."
+    }
+  },
+  {
+    "model": "dictionary.category",
+    "pk": 3,
+    "fields": {
+      "name": "Бази даних",
+      "slug": "bazy-danykh",
+      "description": "Поняття про моделювання, запити та зберігання даних."
+    }
+  },
+  {
+    "model": "dictionary.category",
+    "pk": 4,
+    "fields": {
+      "name": "Архітектура ПЗ",
+      "slug": "arkhitektura-pz",
+      "description": "Терміни про проектування, шари системи та патерни."
+    }
+  },
+  {
+    "model": "dictionary.category",
+    "pk": 5,
+    "fields": {
+      "name": "Тестування",
+      "slug": "testuvannia",
+      "description": "Поняття про перевірку якості та види тестів."
+    }
+  },
+  {
+    "model": "dictionary.category",
+    "pk": 6,
+    "fields": {
+      "name": "Безпека",
+      "slug": "bezpeka",
+      "description": "Базові поняття захисту даних і вебзастосунків."
+    }
+  },
+  {
+    "model": "dictionary.category",
+    "pk": 7,
+    "fields": {
+      "name": "Мережі та протоколи",
+      "slug": "merezhi-ta-protokoly",
+      "description": "Терміни про обмін даними між клієнтом і сервером."
+    }
+  },
+  {
+    "model": "dictionary.source",
+    "pk": 1,
+    "fields": {
+      "title": "Сучасні інформаційні технології",
+      "author": "О. Бондаренко",
+      "year": 2023,
+      "link": ""
+    }
+  },
+  {
+    "model": "dictionary.source",
+    "pk": 2,
+    "fields": {
+      "title": "Вебсистеми та сервіси",
+      "author": "Н. Коваленко",
+      "year": 2024,
+      "link": ""
+    }
+  },
+  {
+    "model": "dictionary.source",
+    "pk": 3,
+    "fields": {
+      "title": "Database Systems",
+      "author": "P. Beynon-Davies",
+      "year": 2020,
+      "link": ""
+    }
+  },
+  {
+    "model": "dictionary.source",
+    "pk": 4,
+    "fields": {
+      "title": "Django Documentation",
+      "author": "Django Software Foundation",
+      "year": 2026,
+      "link": "https://docs.djangoproject.com/"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 1,
+    "fields": {
+      "term": "Алгоритм",
+      "slug": "algorytm",
+      "short_definition": "Скінченна послідовність дій для розв'язання задачі.",
+      "full_definition": "Алгоритм описує кроки, які виконуються у визначеному порядку для отримання передбачуваного результату. У програмуванні алгоритми визначають логіку обробки даних і поведінку застосунку.",
+      "category": 1,
+      "source": 1,
+      "synonyms": "процедура, метод",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 2,
+    "fields": {
+      "term": "Змінна",
+      "slug": "zminna",
+      "short_definition": "Іменована область пам'яті для зберігання значення.",
+      "full_definition": "Змінна використовується для збереження даних під певним ідентифікатором. Значення змінної може оновлюватися під час виконання програми відповідно до алгоритму обробки.",
+      "category": 1,
+      "source": 1,
+      "synonyms": "variable",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 3,
+    "fields": {
+      "term": "Цикл",
+      "slug": "tsykl",
+      "short_definition": "Конструкція для багаторазового виконання блоку коду.",
+      "full_definition": "Цикл дозволяє виконувати ті самі дії багато разів за умовою або заданою кількістю повторів. Це зменшує дублювання коду та спрощує обробку колекцій даних.",
+      "category": 1,
+      "source": 1,
+      "synonyms": "loop",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 4,
+    "fields": {
+      "term": "Функція",
+      "slug": "funktsiia",
+      "short_definition": "Іменований блок коду, який виконує окрему задачу.",
+      "full_definition": "Функція інкапсулює певну логіку та може приймати параметри і повертати результат. Використання функцій підвищує повторне використання коду і його читабельність.",
+      "category": 1,
+      "source": 1,
+      "synonyms": "method, procedure",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 5,
+    "fields": {
+      "term": "Список",
+      "slug": "spysok",
+      "short_definition": "Упорядкована колекція елементів.",
+      "full_definition": "Список зберігає набір значень у визначеному порядку та підтримує доступ за індексом. Його використовують для ітерації, фільтрації та трансформації даних.",
+      "category": 1,
+      "source": 1,
+      "synonyms": "list, масив",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 6,
+    "fields": {
+      "term": "HTML",
+      "slug": "html",
+      "short_definition": "Мова розмітки для структурування вебсторінок.",
+      "full_definition": "HTML визначає структуру вмісту вебсторінки за допомогою елементів і атрибутів. Браузер інтерпретує розмітку і відображає заголовки, текст, форми та інші блоки інтерфейсу.",
+      "category": 2,
+      "source": 2,
+      "synonyms": "HyperText Markup Language",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 7,
+    "fields": {
+      "term": "CSS",
+      "slug": "css",
+      "short_definition": "Мова стилів для оформлення HTML-документів.",
+      "full_definition": "CSS відповідає за кольори, шрифти, відступи, сітку та інші візуальні характеристики сторінки. Відокремлення стилів від розмітки покращує підтримуваність інтерфейсу.",
+      "category": 2,
+      "source": 2,
+      "synonyms": "Cascading Style Sheets",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 8,
+    "fields": {
+      "term": "JavaScript",
+      "slug": "javascript",
+      "short_definition": "Мова програмування для інтерактивності вебсторінок.",
+      "full_definition": "JavaScript виконується в браузері та забезпечує динамічну поведінку інтерфейсу. За його допомогою реалізують обробку подій, перевірку форм і взаємодію з API.",
+      "category": 2,
+      "source": 2,
+      "synonyms": "JS",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 9,
+    "fields": {
+      "term": "Шаблон",
+      "slug": "shablon",
+      "short_definition": "Файл представлення для рендерингу сторінки.",
+      "full_definition": "Шаблон визначає структуру HTML-сторінки з місцями для динамічних даних. У Django шаблони отримують контекст із view і формують фінальну відповідь користувачу.",
+      "category": 2,
+      "source": 4,
+      "synonyms": "template",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 10,
+    "fields": {
+      "term": "Фреймворк",
+      "slug": "freimvork",
+      "short_definition": "Програмна платформа для розробки застосунків.",
+      "full_definition": "Фреймворк надає структуру проєкту, набір бібліотек і готові механізми для типових задач. Це прискорює розробку та підвищує узгодженість архітектури.",
+      "category": 2,
+      "source": 2,
+      "synonyms": "каркас застосунку",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 11,
+    "fields": {
+      "term": "База даних",
+      "slug": "baza-danykh",
+      "short_definition": "Організоване сховище структурованої інформації.",
+      "full_definition": "База даних забезпечує збереження, пошук та оновлення інформації за визначеними правилами. Вебзастосунок працює з БД через запити або ORM-абстракцію.",
+      "category": 3,
+      "source": 3,
+      "synonyms": "database, БД",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 12,
+    "fields": {
+      "term": "Сутність",
+      "slug": "sutnist",
+      "short_definition": "Об'єкт предметної області в моделі даних.",
+      "full_definition": "Сутність описує тип об'єктів, що мають спільні властивості у системі. У реляційних БД сутності відображаються в таблиці з набором полів і обмежень.",
+      "category": 3,
+      "source": 3,
+      "synonyms": "entity",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 13,
+    "fields": {
+      "term": "Первинний ключ",
+      "slug": "pervynnyi-kliuch",
+      "short_definition": "Унікальний ідентифікатор запису в таблиці.",
+      "full_definition": "Первинний ключ однозначно визначає кожен рядок таблиці і використовується для зв'язків з іншими таблицями. Він підтримує цілісність даних та швидкий доступ до записів.",
+      "category": 3,
+      "source": 3,
+      "synonyms": "primary key, PK",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 14,
+    "fields": {
+      "term": "Зовнішній ключ",
+      "slug": "zovnishnii-kliuch",
+      "short_definition": "Поле, що посилається на запис іншої таблиці.",
+      "full_definition": "Зовнішній ключ встановлює зв'язок між таблицями та забезпечує узгодженість посилань. Він дозволяє описувати відношення один-до-багатьох і обмежує видалення пов'язаних даних.",
+      "category": 3,
+      "source": 3,
+      "synonyms": "foreign key, FK",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 15,
+    "fields": {
+      "term": "Індекс",
+      "slug": "indeks",
+      "short_definition": "Структура для прискорення пошуку в таблиці.",
+      "full_definition": "Індекс зменшує час виконання запитів за певними полями завдяки спеціальній структурі даних. Водночас надмірна кількість індексів може уповільнювати операції запису.",
+      "category": 3,
+      "source": 3,
+      "synonyms": "index",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 16,
+    "fields": {
+      "term": "Архітектура",
+      "slug": "arkhitektura",
+      "short_definition": "Структурна організація компонентів програмної системи.",
+      "full_definition": "Архітектура визначає, як підсистеми взаємодіють між собою, які мають межі відповідальності та як забезпечується масштабованість. Добра архітектура знижує вартість змін у майбутньому.",
+      "category": 4,
+      "source": 1,
+      "synonyms": "software architecture",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 17,
+    "fields": {
+      "term": "MVT",
+      "slug": "mvt",
+      "short_definition": "Патерн Django: Model, View, Template.",
+      "full_definition": "MVT розділяє систему на модель даних, логіку обробки запиту та шаблон представлення. Такий поділ робить код прозорішим, спрощує тестування та підтримку вебзастосунку.",
+      "category": 4,
+      "source": 4,
+      "synonyms": "Model-View-Template",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 18,
+    "fields": {
+      "term": "Маршрутизація",
+      "slug": "marshrutyzatsiia",
+      "short_definition": "Механізм відповідності URL обробникам.",
+      "full_definition": "Маршрутизація визначає, який view обробляє конкретний URL-запит користувача. Від чіткості маршрутизації залежить передбачуваність навігації та безпомилковий доступ до сторінок.",
+      "category": 4,
+      "source": 4,
+      "synonyms": "routing",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 19,
+    "fields": {
+      "term": "ORM",
+      "slug": "orm",
+      "short_definition": "Інтерфейс для роботи з БД через об'єкти.",
+      "full_definition": "ORM дозволяє працювати з таблицями бази даних у вигляді класів і об'єктів мови програмування. Це зменшує обсяг SQL-коду та підвищує переносимість логіки між різними СУБД.",
+      "category": 4,
+      "source": 4,
+      "synonyms": "Object-Relational Mapping",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 20,
+    "fields": {
+      "term": "CRUD",
+      "slug": "crud",
+      "short_definition": "Базові операції: create, read, update, delete.",
+      "full_definition": "CRUD-операції визначають мінімальний набір дій для керування записами в системі. Їх реалізація є основою більшості адміністративних і контентних сценаріїв.",
+      "category": 4,
+      "source": 1,
+      "synonyms": "create-read-update-delete",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 21,
+    "fields": {
+      "term": "Тест-кейс",
+      "slug": "test-keis",
+      "short_definition": "Опис перевірки з вхідними даними та очікуваним результатом.",
+      "full_definition": "Тест-кейс формалізує конкретний сценарій перевірки функціоналу і дозволяє відтворювано оцінювати результат. Він містить кроки, вхідні умови, очікування та фактичний результат виконання.",
+      "category": 5,
+      "source": 1,
+      "synonyms": "test case",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 22,
+    "fields": {
+      "term": "Unit-тест",
+      "slug": "unit-test",
+      "short_definition": "Автоматична перевірка окремого модуля або функції.",
+      "full_definition": "Unit-тест ізолює невелику частину логіки та перевіряє її на коректність незалежно від інших компонентів системи. Такий підхід спрощує пошук причин регресій і прискорює розробку.",
+      "category": 5,
+      "source": 1,
+      "synonyms": "модульний тест",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 23,
+    "fields": {
+      "term": "Регресійне тестування",
+      "slug": "rehresiine-testuvannia",
+      "short_definition": "Перевірка, що зміни не зламали наявний функціонал.",
+      "full_definition": "Регресійне тестування запускається після змін у коді або даних, щоб виявити небажані побічні ефекти. Воно гарантує, що раніше працездатні сценарії залишаються стабільними.",
+      "category": 5,
+      "source": 1,
+      "synonyms": "regression testing",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 24,
+    "fields": {
+      "term": "Покриття тестами",
+      "slug": "pokryttia-testamy",
+      "short_definition": "Міра частки коду або сценаріїв, охоплених тестами.",
+      "full_definition": "Покриття тестами показує, яка частина функціоналу перевіряється автоматично. Воно допомагає оцінити ризики, але саме по собі не гарантує повну відсутність дефектів.",
+      "category": 5,
+      "source": 1,
+      "synonyms": "test coverage",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 25,
+    "fields": {
+      "term": "CSRF",
+      "slug": "csrf",
+      "short_definition": "Атака підробки міжсайтового запиту.",
+      "full_definition": "CSRF-атака змушує браузер авторизованого користувача виконати небажаний запит до вебзастосунку. Захист реалізується токенами, перевіркою методів та коректною обробкою форм.",
+      "category": 6,
+      "source": 4,
+      "synonyms": "Cross-Site Request Forgery",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 26,
+    "fields": {
+      "term": "Валідація",
+      "slug": "validatsiia",
+      "short_definition": "Перевірка коректності вхідних даних.",
+      "full_definition": "Валідація гарантує, що дані відповідають форматам, обмеженням і бізнес-правилам до їх збереження. Вона зменшує ризик помилок і захищає систему від некоректного вводу.",
+      "category": 6,
+      "source": 4,
+      "synonyms": "validation",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 27,
+    "fields": {
+      "term": "Аутентифікація",
+      "slug": "autentyfikatsiia",
+      "short_definition": "Процес підтвердження особи користувача.",
+      "full_definition": "Аутентифікація перевіряє, що користувач є тим, за кого себе видає, зазвичай через логін і пароль. Після неї система може застосувати правила авторизації для доступу до ресурсів.",
+      "category": 6,
+      "source": 1,
+      "synonyms": "authentication",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 28,
+    "fields": {
+      "term": "Авторизація",
+      "slug": "avtoryzatsiia",
+      "short_definition": "Визначення прав доступу користувача в системі.",
+      "full_definition": "Авторизація надає або обмежує доступ до функцій і даних відповідно до ролі користувача. Вона працює після аутентифікації і реалізує політику безпеки додатка.",
+      "category": 6,
+      "source": 1,
+      "synonyms": "authorization",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 29,
+    "fields": {
+      "term": "HTTP",
+      "slug": "http",
+      "short_definition": "Протокол передавання гіпертекстових повідомлень.",
+      "full_definition": "HTTP визначає правила обміну запитами та відповідями між клієнтом і сервером. На ньому базується робота вебсайтів, API та більшості сучасних вебсервісів.",
+      "category": 7,
+      "source": 2,
+      "synonyms": "HyperText Transfer Protocol",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 30,
+    "fields": {
+      "term": "URL",
+      "slug": "url",
+      "short_definition": "Уніфікована адреса вебресурсу.",
+      "full_definition": "URL вказує місце розташування ресурсу в мережі та спосіб доступу до нього. У вебзастосунку зрозумілі URL покращують навігацію, SEO і зручність тестування сценаріїв.",
+      "category": 7,
+      "source": 2,
+      "synonyms": "адреса ресурсу",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 31,
+    "fields": {
+      "term": "Клієнт-сервер",
+      "slug": "klient-server",
+      "short_definition": "Модель взаємодії, де клієнт запитує, а сервер відповідає.",
+      "full_definition": "У клієнт-серверній моделі браузер або застосунок-клієнт надсилає запити, а сервер виконує обробку і повертає результат. Така модель є основою більшості вебсистем.",
+      "category": 7,
+      "source": 2,
+      "synonyms": "client-server model",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "dictionary.term",
+    "pk": 32,
+    "fields": {
+      "term": "API",
+      "slug": "api",
+      "short_definition": "Інтерфейс для взаємодії між програмними компонентами.",
+      "full_definition": "API визначає набір правил і точок доступу, через які одна система може отримувати або передавати дані іншій. Якісне API спрощує інтеграцію та масштабування сервісів.",
+      "category": 7,
+      "source": 2,
+      "synonyms": "Application Programming Interface",
+      "created_at": "2026-04-22T08:00:00Z",
+      "updated_at": "2026-04-22T08:00:00Z"
+    }
+  }
+]

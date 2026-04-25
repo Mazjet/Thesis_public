@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}{{ term.term }} | Тлумачний словник{% endblock %}
+
+{% block content %}
+<article class="term-detail">
+    <a class="back-link" href="{% url 'term_list' %}">&larr; До каталогу термінів</a>
+    <h2>{{ term.term }}</h2>
+    <section class="term-block term-short">
+        <h3>Коротке визначення</h3>
+        <p class="lead">{{ term.short_definition }}</p>
+    </section>
+
+    <section class="term-block term-full">
+        <h3>Повне пояснення</h3>
+        <p>{{ term.full_definition }}</p>
+    </section>
+
+    <section class="term-meta">
+        {% if term.synonyms %}
+        <p><span>Синоніми</span> {{ term.synonyms }}</p>
+        {% endif %}
+        <p><span>Категорія</span> <a href="{{ term.category.get_absolute_url }}">{{ term.category.name }}</a></p>
+        {% if term.source %}
+        <p><span>Джерело</span> {{ term.source.title }}</p>
+        {% endif %}
+    </section>
+</article>
+{% endblock %}

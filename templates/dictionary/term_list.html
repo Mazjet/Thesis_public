@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Терміни | Тлумачний словник{% endblock %}
+
+{% block content %}
+<h2>Каталог термінів</h2>
+<p class="catalog-note">Використовуйте пошук і фільтр за категорією, щоб швидко знайти потрібне визначення.</p>
+
+<form method="get" class="search-form">
+    <div class="search-row">
+        <div>
+            <label for="catalog-query">Пошук</label>
+            <input id="catalog-query" type="text" name="q" value="{{ query }}" placeholder="Термін, синонім або фрагмент визначення">
+        </div>
+        <div>
+            <label for="catalog-category">Категорія</label>
+            <select id="catalog-category" name="category">
+                <option value="">Усі категорії</option>
+                {% for category in categories %}
+                <option value="{{ category.slug }}" {% if selected_category == category.slug %}selected{% endif %}>
+                    {{ category.name }}
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+    <div class="search-actions">
+        <button type="submit">Знайти</button>
+        <a class="button-link" href="{% url 'term_list' %}">Скинути</a>
+    </div>
+</form>
+
+<ul class="card-list">
+    {% for term in terms %}
+    <li class="card">
+        <h3><a href="{{ term.get_absolute_url }}">{{ term.term }}</a></h3>
+        <p>{{ term.short_definition }}</p>
+        <small>Категорія: <a href="{{ term.category.get_absolute_url }}">{{ term.category.name }}</a></small>
+    </li>
+    {% empty %}
+    <li>Нічого не знайдено за вказаними параметрами.</li>
+    {% endfor %}
+</ul>
+{% endblock %}
